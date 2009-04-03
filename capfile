@@ -1,0 +1,30 @@
+load 'deploy' if respond_to?(:namespace) # cap2 differentiator
+
+default_run_options[:pty] = true
+
+set :application, 'chchspace-site'
+set :repository,  "git@github.com:chchspace/site.git"
+
+# Standard settings
+set :user, 'deploy'
+set :domain, '67.23.6.119'
+set :scm, 'git'
+set :deploy_to, "/home/#{user}/#{application}"
+set :deploy_via, :remote_cache
+set :branch, 'master'
+set :git_shallow_clone, 1
+set :use_sudo, false
+
+# Debuggery
+# set :scm_verbose, true
+
+server domain, :app, :web, :db
+
+namespace :deploy do
+  
+  task :restart do
+    # Skipping restart
+    # sudo "thin restart -C /etc/thin/#{application}.yml"
+  end
+  
+end
