@@ -2,7 +2,7 @@
 
 body, input, textarea, select {
   color: #222;
-  font: 10pt "Helvetica Neue", "Helvetica", Arial, sans-serif;
+  font: 10pt Georgia, Times, serif;
 }
 
 body { line-height: 1.6em; }
