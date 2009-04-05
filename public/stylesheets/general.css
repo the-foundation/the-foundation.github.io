@@ -19,3 +19,13 @@ h2 { font-size: 1.6em; }
 p { margin: 0.5em 0 1em; }
 
 pre { font: 9pt Monaco, Courier, monospace; }
+
+/* Links */
+
+a { text-decoration: none; }
+
+  a:link, a:visited { color: #3786f9; }
+
+  a:hover { color: #3258a1; }
+
+  a:active { color: #24355f; }
