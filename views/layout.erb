@@ -7,7 +7,27 @@
   </head>
   <body>
     
-    <%= yield %>
+    <div id="header">
+      <%= project_name %>
+      <ul id="nav">
+        <li><%= link_unless_current 'Home', '/' %></li>
+        <li><%= link_unless_current 'About', '/about' %></li>
+      </ul>
+    </div>
+    
+    <div id="article">
+      <%= yield %>
+    </div>
+    
+    <div id="footer">
+      <div class="sponsor">
+        Sponsored by <a href="http://nztech.org/">nztech.org</a> and <a href="http://metanation.com">MetaNation</a>
+      </div>
+      This site is released under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/nz/">Creative Commons Attribution-Noncommercial-Share Alike 3.0 New Zealand License</a>.
+      <div class="contribute">
+        Contribute to the site on <%= link 'GitHub', 'http://github.com/chchspace/site/tree/master' %>.
+      </div>
+    </div>
     
   </body>
 </html>
