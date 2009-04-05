@@ -1,0 +1,21 @@
+/* Text */
+
+body, input, textarea, select {
+  color: #222;
+  font: 10pt "Helvetica Neue", "Helvetica", Arial, sans-serif;
+}
+
+body { line-height: 1.6em; }
+
+h1, h2, h3, h4, h5, h6 {
+  color: #000;
+  margin: 0.5em 0;
+}
+
+h1 { font-size: 2em; }
+
+h2 { font-size: 1.6em; }
+
+p { margin: 0.5em 0 1em; }
+
+pre { font: 9pt Monaco, Courier, monospace; }
