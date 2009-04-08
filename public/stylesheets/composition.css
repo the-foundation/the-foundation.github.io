@@ -6,10 +6,7 @@ body {
   width: 700px;
 }
 
-#header {
-  border-bottom: 2px solid #ccc;
-  padding-bottom: 1em;
-}
+#header { padding-bottom: 1em; }
   
   #header .project_name {
     font-weight: bold;
@@ -38,7 +35,6 @@ body {
 }
 
 #footer {
-  border-top: 2px solid #ccc;
   font-size: 0.9em;
   padding-top: 1.1em;
 }
