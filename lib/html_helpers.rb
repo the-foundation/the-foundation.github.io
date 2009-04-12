@@ -1,11 +1,12 @@
-module HTMLHelpers 
-  def site_name
-    'Super Happy Fun Site'
+module HTMLHelpers
+  
+  def project_name
+    options.project_name || 'Unnamed'
   end
   
   # Shows the page title, throw this in your <title> tags
   def page_title
-    (@heading + ' &mdash; ' if @heading).to_s + site_name
+    (@heading + ' &mdash; ' if @heading).to_s + project_name
   end
   
   # Set the page heading and display it as a heading
