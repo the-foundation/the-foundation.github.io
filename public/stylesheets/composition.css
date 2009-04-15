@@ -6,7 +6,10 @@ body {
   width: 740px;
 }
 
-#header { padding-bottom: 1em; }
+#header {
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 1em;
+}
   
   #header .project_name {
     font-weight: bold;
@@ -14,8 +17,9 @@ body {
   }
 
 #aside {
+  float: left;
+  margin-bottom: 1em;
   overflow: hidden;
-  float :left;
   width: 140px;
 }
 
@@ -32,10 +36,16 @@ body {
 }
 
 #footer {
-  opacity: 0.6;
+  clear: both;
+  border-top: 1px solid;
+  color: #ccc;
   font-size: 0.8em;
   padding-top: 1.1em;
 }
+
+  #footer a:link, #footer a:visited { color: #a0bdf1; }
+  
+    #footer a:hover { color: #de7e51; }
   
   #footer .meta, #footer div.licence { width: 300px; }
   
