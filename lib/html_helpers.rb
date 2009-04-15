@@ -67,7 +67,9 @@ module HTMLHelpers
            
           function initialize() {
             var map = new google.maps.Map2(document.getElementById("map"));
-            map.setCenter(new google.maps.LatLng(37.4419, -122.1419), 13);
+            map.setCenter(new google.maps.LatLng(-43.52857561845461, 172.6408338546753), 16);
+            map.addOverlay(new GMarker(map.getCenter()));
+            map.openInfoWindowHtml(map.getCenter(), "<strong>Canterbury Innovation Incubator</strong><br />200 Armagh St<br />Christchurch");
           }
           
           google.setOnLoadCallback(initialize);

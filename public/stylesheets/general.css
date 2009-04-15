@@ -23,6 +23,10 @@ p { margin: 0.5em 0 1em; }
 
 pre { font: 9pt Monaco, Courier, monospace; }
 
+em { font-style: italic; }
+
+strong { font-weight: bold; }
+
 /* Links */
 
 a { text-decoration: none; }
