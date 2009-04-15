@@ -4,6 +4,7 @@
     <title><%= page_title %></title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <link rel="stylesheet" type="text/css" media="screen" href="/stylesheets/master.css" />
+    <%= scripts %>
   </head>
   <body>
     
@@ -14,9 +15,9 @@
     <div id="aside">
       <ul id="nav">
         <li><%= link_unless_current 'Home', '/' %></li>
+        <li><%= link_unless_current 'About', '/about' %></li>
         <li><%= link_unless_current 'Mailing List', 'http://groups.google.com/group/chchspace' %></li>
         <li><%= link_unless_current 'Photos', 'http://www.flickr.com/groups/chchspace/' %></li>
-        <li><%= link_unless_current 'About', '/about' %></li>
       </ul>
     </div>
     

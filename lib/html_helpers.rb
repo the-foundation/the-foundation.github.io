@@ -37,7 +37,7 @@ module HTMLHelpers
   
   # Displays a link or just plain text depending on whether the path matches the current route
   def link_unless_current(text, path = nil, options = {})
-    path == remove_trailing_information(request.path_info) ? text : link(text, path, options)
+    path == remove_trailing_information(request.path_info) ? content_tag(:span, text, :class => 'current') : link(text, path, options)
   end
   
   # Removes trailing slashes and file extensions
@@ -50,6 +50,31 @@ module HTMLHelpers
   def errors_for(model)
     return if model.errors.empty?
     content_tag(:ul, model.errors.map { |e| content_tag(:li, e.first) }.uniq, :class => 'errors')
+  end
+  
+  def google_map
+    @gmap = true
+    content_tag(:div, "Please make sure you have JavaScript enabled to view this map.", :id => 'map')
+  end
+  
+  def scripts
+    output = ""
+    if @gmap
+      output = <<-HTML
+        <script type="text/javascript" src="http://www.google.com/jsapi?key=#{options.google_api_key}"></script>
+        <script type="text/javascript">
+          google.load("maps", "2.x");
+           
+          function initialize() {
+            var map = new google.maps.Map2(document.getElementById("map"));
+            map.setCenter(new google.maps.LatLng(37.4419, -122.1419), 13);
+          }
+          
+          google.setOnLoadCallback(initialize);
+        </script>
+      HTML
+    end
+    output
   end
   
 end
