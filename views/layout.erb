@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <title><%= page_title %></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" type="text/css" media="screen" href="/stylesheets/master.css" />
+    <%= scripts %>
+  </head>
+  <body>
+    
+    <div id="header">
+      <%= link image('logo.gif', project_name), '/', :class => 'project_name' %>
+    </div>
+    
+    <div id="aside">
+      <ul id="nav">
+        <li><%= link_unless_current 'Home', '/' %></li>
+        <li><%= link_unless_current 'About', '/about' %></li>
+        <li><%= link_unless_current 'Mailing List', 'http://groups.google.com/group/chchspace' %></li>
+        <li><%= link_unless_current 'Photos', 'http://www.flickr.com/groups/chchspace/' %></li>
+      </ul>
+    </div>
+    
+    <div id="article">
+      <%= yield %>
+    </div>
+    
+    <div id="footer">
+      <div class="licence">
+        Site licenced under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/nz/">Creative Commons Attribution-Noncommercial-Share Alike 3.0 New Zealand License</a>.
+      </div>
+      <div class="meta">
+        Sponsored by <a href="http://nztech.org/">nztech.org</a> and <a href="http://metanation.com">MetaNation</a>.<br />
+        Contribute to the site on <%= link 'GitHub', 'http://github.com/chchspace/site/tree/master' %>.
+      </div>
+    </div>
+    
+  </body>
+</html>
