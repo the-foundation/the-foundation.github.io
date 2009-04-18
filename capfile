@@ -7,7 +7,7 @@ set :repository,  "git@github.com:chchspace/site.git"
 
 # Standard settings
 set :user, 'deploy'
-set :domain, '67.23.6.119'
+set :domain, 'metanation.com'
 set :scm, 'git'
 set :deploy_to, "/home/#{user}/#{application}"
 set :deploy_via, :remote_cache
