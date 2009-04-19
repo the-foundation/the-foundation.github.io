@@ -90,9 +90,9 @@ pre.email {
     text-align: center;
   }
   
-  #event .address {
-    text-align: center;
-  }
+  #event .time { font-size: 1.3em; }
+  
+  #event .address, #event .time { text-align: center; }
   
 
 .about {
