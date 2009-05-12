@@ -7,8 +7,10 @@ To-Do
 -----
 
 * Photos (Flickr)
-* Map (Google Maps)
 * Countdown
+* Videos
+* Who's who
+* Mailing list widget
 
 Contributing
 ------------
