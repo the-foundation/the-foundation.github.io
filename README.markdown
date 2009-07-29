@@ -3,14 +3,8 @@ Christchurch Creative Space Site
 
 This is the official repository for the [Christchurch Creative Space site](http://nztech.org/chchspace).
 
-To-do
------
+You can submit ideas or report bugs under [issues on GitHub](http://github.com/chchspace/site/issues).
 
-* Photos (Flickr)
-* Countdown
-* Videos
-* Who's who
-* Mailing list widget
 
 Contributing
 ------------
