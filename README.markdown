@@ -58,4 +58,4 @@ If you'd like to contribute, you're welcome to submit email patches or, preferab
 
 1. `cd` into the chchspace-directory
 2. `shotgun site.rb`
-3. [http://localhost:4567](http://localhost:4567)
+3. [http://localhost:9393](http://localhost:9393)
