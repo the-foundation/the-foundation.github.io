@@ -69,17 +69,18 @@ pre.email {
 }
 
 #map {
+  border: 1px solid #fff;
   height: 300px;
   width: 100%;
 }
 
 #event {
-  background-color: #393;
-  color: #fff;
+  background-color: #4975cb;
   padding: 1em;
 }
 
   #event .header {
+    color: #fff;
     padding-bottom: 1em;
   }
   
