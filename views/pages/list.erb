@@ -8,6 +8,7 @@
     <table>
       <tr>
         <th>Page</th>
+        <th>Parent</th>
         <th>Path</th>
         <th colspan="3">Actions</th>
       </tr>
@@ -16,6 +17,7 @@
           <td>
             <a href="/<%= h page.permalink %>"><%= h page.title %></a>
           </td>
+          <td><%= h(page.parent.title) if page.parent? %></td>
           <td>/<%= h page.permalink %></td>
           <td><a href="/pages/<%= h page.permalink %>/edit">Edit</a></td>
           <td><a href="/pages/<%= h page.permalink %>" class="delete">Delete</a></td>
