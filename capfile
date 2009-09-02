@@ -35,7 +35,7 @@ namespace :deploy do
   end
   
   task :migrate do
-    run "cd #{current_path} && rake migrate APP_ENV=production"
+    run "cd #{current_path} && rake db:migrate APP_ENV=production"
   end
   
   task :default do
