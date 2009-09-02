@@ -46,10 +46,17 @@ module HTMLHelpers
     string.gsub(/.(\/|\..*?)+$/, '')
   end
   
-  # Displays a list of errors for a given model
-  def errors_for(model)
-    return if model.errors.empty?
-    content_tag(:ul, model.errors.map { |e| content_tag(:li, e.first) }.uniq, :class => 'errors')
+  # Displays a the base errors for a given model
+  def base_errors_for(model, options = {})
+    return unless model.errors.on_base
+    content_tag(:ul, model.errors.on_base.map { |e| content_tag(:li, h(e)) }.uniq, options.merge!(:class => 'errors'))
+  end
+  
+  # Displays the first error for a given attribute on a model
+  def error_message_for(model, attribute, options = {})
+    return unless model.errors.invalid?(attribute)
+    message = model.errors.on(attribute)
+    content_tag(:span, h(message.is_a?(Array) ? message.first : message), options.merge!(:class => 'error'))
   end
   
   def google_map

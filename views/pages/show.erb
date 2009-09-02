@@ -1,0 +1,12 @@
+<%= heading h(@page.title) %>
+
+<%= RDiscount.new(@page.body).to_html %>
+
+<% if logged_in? %>
+  <p>
+    <a href="/pages">All Pages</a>
+    <a href="/pages/new">New Pages</a>
+    <a href="/pages/<%= h @page.permalink %>/edit">Edit</a>
+    <a href="/pages/<%= h @page.permalink %>" class="delete">Delete</a>
+  </p>
+<% end %>

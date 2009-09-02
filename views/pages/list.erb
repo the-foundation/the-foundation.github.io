@@ -1,0 +1,12 @@
+<%= heading 'Pages' %>
+
+<ul>
+  <% for page in @pages %>
+    <li>
+      <a href="/pages/<%= h page.permalink %>"><%= h page.title %></a>
+      (<a href="/pages/<%= h page.permalink %>/edit">Edit</a>)
+      (<a href="/pages/<%= h page.permalink %>" class="delete">Delete</a>)
+    </li>
+  <% end %>
+  <li><a href="/pages/new">Create new page</a></li>
+</ul>
