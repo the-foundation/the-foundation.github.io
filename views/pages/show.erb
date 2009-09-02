@@ -1,5 +1,9 @@
 <%= heading h(@page.title) %>
 
+<% if @page.parent? %>
+<a href="/<%= h @page.parent.permalink %>"><%= h @page.parent.title %></a> &raquo;
+<% end %>
+
 <%= RDiscount.new(@page.body).to_html %>
 
 <% if logged_in? %>

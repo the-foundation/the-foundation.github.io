@@ -90,4 +90,15 @@ module HTMLHelpers
     ' class="alternate"' if row_number % 2 > 0
   end
   
+  def options_for(collection, content, value, selected_value, options = {})
+    options_html = collection.map do |item|
+      next if options[:exclude] == item
+      tag_options = { :value => (value.is_a?(Symbol) ? item.send(value) : value)}
+      tag_options.merge(:selected => 'selected') if value == selected_value
+      content_tag(:option, (content.is_a?(Symbol) ? item.send(content) : content.to_s), tag_options)
+    end
+    options_html.unshift content_tag(:option, '') if options.include?(:empty)
+    options_html
+  end
+  
 end

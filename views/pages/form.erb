@@ -13,6 +13,12 @@
     <%= error_message_for @page, :body %>
   </p>
   <p>
+    <label for="page_parent_id">Parent</label>
+    <select name="page[parent_id]">
+      <%= options_for(Page.all, :title, :id, @page.parent_id, :empty => true, :exclude => @page) %>
+    </select>
+  </p>
+  <p>
     <input type="submit" value="<%= @page.new_record? ? 'Create' : 'Update' %>" />
     <%= '<input type="hidden" name="_method" value="put" />' unless @page.new_record? %>
     or <a href="/<%= h(@page.permalink_was) unless @page.new_record? %>">Cancel</a>
