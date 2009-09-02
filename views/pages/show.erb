@@ -1,8 +1,8 @@
-<%= heading h(@page.title) %>
-
 <% if @page.parent? %>
 <a href="/<%= h @page.parent.permalink %>"><%= h @page.parent.title %></a> &raquo;
 <% end %>
+
+<%= heading h(@page.title) %>
 
 <%= RDiscount.new(@page.body).to_html %>
 
