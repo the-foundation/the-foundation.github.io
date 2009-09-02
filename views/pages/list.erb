@@ -8,13 +8,15 @@
     <table>
       <tr>
         <th>Page</th>
+        <th>Path</th>
         <th colspan="3">Actions</th>
       </tr>
       <% @pages.each_with_index do |page, row_number| %>
         <tr<%= alternate_row row_number %>>
           <td>
-            <a href="/pages/<%= h page.permalink %>"><%= h page.title %></a>
+            <a href="/<%= h page.permalink %>"><%= h page.title %></a>
           </td>
+          <td>/<%= h page.permalink %></td>
           <td><a href="/pages/<%= h page.permalink %>/edit">Edit</a></td>
           <td><a href="/pages/<%= h page.permalink %>" class="delete">Delete</a></td>
           <td><input type="checkbox" name="pages[]" value="<%= h page.id %>" /></td>

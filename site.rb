@@ -45,11 +45,6 @@ get '/pages/new/?' do
   erb :'pages/form'
 end
 
-get '/pages/:permalink/?' do
-  @page = Page.find_by_permalink(params[:permalink])
-  erb :'pages/show'
-end
-
 get '/pages/:permalink/edit/?' do
   authenticate!
   @page = Page.find_by_permalink(params[:permalink])
@@ -59,14 +54,14 @@ end
 post '/pages/?' do
   authenticate!
   @page = Page.new(params[:page])
-  @page.save ? redirect("/pages/#{@page.permalink}") : erb(:'pages/form')
+  @page.save ? redirect("/#{@page.permalink}") : erb(:'pages/form')
 end
 
 put '/pages/:permalink/?' do
   authenticate!
   @page = Page.find_by_permalink(params[:permalink])
   @page.update_attributes(params[:page])
-  @page.save ? redirect("/pages/#{@page.permalink}") : erb(:'pages/form')
+  @page.save ? redirect("/#{@page.permalink}") : erb(:'pages/form')
 end
 
 delete '/pages/:permalink/?' do
@@ -87,6 +82,7 @@ get '/:page/?' do
   begin
     erb params[:page].to_sym
   rescue Errno::ENOENT
-    raise Sinatra::NotFound
+    @page = Page.find_by_permalink(params[:page])
+    @page ? erb(:'pages/show') : raise(Sinatra::NotFound)
   end
 end

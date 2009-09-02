@@ -15,6 +15,6 @@
   <p>
     <input type="submit" value="<%= @page.new_record? ? 'Create' : 'Update' %>" />
     <%= '<input type="hidden" name="_method" value="put" />' unless @page.new_record? %>
-    or <a href="/pages/<%= h(@page.permalink_was) unless @page.new_record? %>">Cancel</a>
+    or <a href="/<%= h(@page.permalink_was) unless @page.new_record? %>">Cancel</a>
   </p>
 </form>
