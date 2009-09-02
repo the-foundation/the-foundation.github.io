@@ -1,7 +1,15 @@
 class Page < ActiveRecord::Base
+  named_scope :all_root, :conditions => { :parent_id => nil }
+  
+  acts_as_tree :order => 'title'
+  
   validates_presence_of :title, :body
   validates_uniqueness_of :permalink
   before_save :update_permalink
+  
+  def parent?
+    parent
+  end
   
   def update_permalink
     self[:permalink] = title[0..20].downcase.gsub(/[^a-z0-9_-]+/, '-')
