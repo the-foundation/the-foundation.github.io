@@ -21,12 +21,11 @@ test:
   username: root
   password:
 
-# TODO: create
 production:
   adapter: mysql
   encoding: utf8
   reconnect: false
   database: chchspace_production
   pool: 5
-  username: chchspace_production
-  password:
+  username: chchspace
+  password: QzejcYUyLQBL
