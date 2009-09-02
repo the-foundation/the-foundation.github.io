@@ -76,6 +76,13 @@ delete '/pages/:permalink/?' do
   redirect '/pages'
 end
 
+delete '/pages' do
+  authenticate!
+  @pages = Page.find(params[:pages])
+  @pages.each { |p| p.destroy }
+  redirect '/pages'
+end
+
 get '/:page/?' do
   begin
     erb params[:page].to_sym

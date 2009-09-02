@@ -86,4 +86,8 @@ module HTMLHelpers
     output
   end
   
+  def alternate_row(row_number)
+    ' class="alternate"' if row_number % 2 > 0
+  end
+  
 end
