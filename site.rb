@@ -1,12 +1,17 @@
 require 'sinatra'
 require 'active_record'
 require 'rdiscount'
+require 'digest/md5'
 require 'lib/html_helpers'
 require 'lib/tree'
 require 'lib/pete_wiki'
 
 set :project_name, 'Christchurch Creative Space'
+set :password, '36350477ad6b248518e8e0138d8acf05'
+set :salt, '3e8ef26aa740fb0885c34d7262505523'
 set :google_api_key, 'ABQIAAAAhku25_kwHrCaMNoGPqrDuxRlOkyFWHl-00s1f3Cuv275XkQgsBTvqgjhzb87xFOZkxG9fbaa3Vsl_A'
+
+enable :sessions
 
 configure do
   environment = Sinatra::Application.environment
@@ -20,9 +25,8 @@ end
 helpers do
   include HTMLHelpers
   
-  # TODO: implement
   def logged_in?
-    true
+    session[:authenticated]
   end
   
   def authenticate!
@@ -36,53 +40,22 @@ before do
   @root_pages = Page.all_root
 end
 
-get '/' do
-  erb :index
+get '/login/?' do
+  erb :login
 end
 
-get '/pages/?' do
-  authenticate!
-  @pages = Page.all
-  erb :'pages/list'
+post '/authentication' do
+  if Digest::MD5.hexdigest(params[:password] + options.salt) == options.password
+    session[:authenticated] = true
+    redirect '/pages'
+  else
+    erb(:login)
+  end
 end
 
-get '/pages/new/?' do
-  authenticate!
-  @page = Page.new
-  erb :'pages/form'
-end
-
-get '/pages/:permalink/edit/?' do
-  authenticate!
-  @page = Page.find_by_permalink(params[:permalink])
-  erb :'pages/form'
-end
-
-post '/pages/?' do
-  authenticate!
-  @page = Page.new(params[:page])
-  @page.save ? redirect("/#{@page.permalink}") : erb(:'pages/form')
-end
-
-put '/pages/:permalink/?' do
-  authenticate!
-  @page = Page.find_by_permalink(params[:permalink])
-  @page.update_attributes(params[:page])
-  @page.save ? redirect("/#{@page.permalink}") : erb(:'pages/form')
-end
-
-delete '/pages/:permalink/?' do
-  authenticate!
-  @page = Page.find_by_permalink(params[:permalink])
-  @page.destroy
-  redirect '/pages'
-end
-
-delete '/pages' do
-  authenticate!
-  @pages = Page.find(params[:pages])
-  @pages.each { |p| p.destroy }
-  redirect '/pages'
+delete '/authentication' do
+  session[:authenticated] = nil
+  redirect '/'
 end
 
 get '/:page/?' do

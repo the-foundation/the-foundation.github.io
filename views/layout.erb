@@ -24,6 +24,7 @@
         <li><a href="irc://irc.freenode.net:6667/#chchspace">IRC</a></li>
         <% if logged_in? %>
         <li><%= link_unless_current 'Pages', '/pages' %></li>
+        <li><a href="/authentication" class="delete">Log Out</a></li>
         <% end %>
       </ul>
     </div>
