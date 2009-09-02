@@ -3,6 +3,7 @@ require 'active_record'
 require 'rdiscount'
 require 'lib/html_helpers'
 require 'lib/tree'
+require 'lib/pete_wiki'
 
 set :project_name, 'Christchurch Creative Space'
 set :google_api_key, 'ABQIAAAAhku25_kwHrCaMNoGPqrDuxRlOkyFWHl-00s1f3Cuv275XkQgsBTvqgjhzb87xFOZkxG9fbaa3Vsl_A'
