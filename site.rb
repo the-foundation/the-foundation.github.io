@@ -1,8 +1,8 @@
 require 'sinatra'
 require 'active_record'
 require 'rdiscount'
-require 'models/page'
 require 'lib/html_helpers'
+require 'lib/tree'
 
 set :project_name, 'Christchurch Creative Space'
 set :google_api_key, 'ABQIAAAAhku25_kwHrCaMNoGPqrDuxRlOkyFWHl-00s1f3Cuv275XkQgsBTvqgjhzb87xFOZkxG9fbaa3Vsl_A'
@@ -12,6 +12,8 @@ configure do
   db_config = YAML.load_file(File.join(File.dirname(__FILE__), 'database', 'configuration.yml'))
   ActiveRecord::Base.establish_connection(db_config[environment.to_s])
   ActiveRecord::Base.logger = Logger.new(environment == :development ? STDOUT : File.join("log", "#{environment.to_s}.database.log"))
+  ActiveRecord::Base.send(:include, ActiveRecord::Acts::Tree)
+  require 'models/page'
 end
 
 helpers do
@@ -27,6 +29,10 @@ helpers do
   end
   
   alias_method :h, :escape_html
+end
+
+before do
+  @root_pages = Page.all_root
 end
 
 get '/' do
