@@ -26,4 +26,16 @@ namespace :deploy do
     sudo "thin restart -C /etc/thin/#{application}.yml"
   end
   
+  task :migrate do
+    run "rake migrate APP_ENV=production"
+  end
+  
+  task :default do
+    update
+    update_code
+    finalize_update
+    symlink
+    restart
+  end
+  
 end
