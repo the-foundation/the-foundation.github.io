@@ -37,7 +37,7 @@ helpers do
 end
 
 before do
-  ActiveRecord::Base.verify! # Ensures AR reconnects after long periods of inactivity
+  ActiveRecord::Base.connection.verify! # Ensures AR reconnects after long periods of inactivity
   @root_pages = Page.all_root
 end
 
