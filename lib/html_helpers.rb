@@ -6,7 +6,8 @@ module HTMLHelpers
   
   # Shows the page title, throw this in your <title> tags
   def page_title
-    (@heading + ' &mdash; ' if @heading).to_s + project_name
+    return "#{@heading} &mdash; #{project_name}" if @heading
+    project_name + (" &mdash; #{options.tagline}" if options.tagline).to_s
   end
   
   # Set the page heading and display it as a heading
