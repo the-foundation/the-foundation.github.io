@@ -10,7 +10,7 @@ set :project_name, 'Spacecraft'
 set :tagline, 'The Christchurch Creative Space'
 set :password, '36350477ad6b248518e8e0138d8acf05'
 set :salt, '3e8ef26aa740fb0885c34d7262505523'
-set :google_api_key, 'ABQIAAAAhku25_kwHrCaMNoGPqrDuxRlOkyFWHl-00s1f3Cuv275XkQgsBTvqgjhzb87xFOZkxG9fbaa3Vsl_A'
+set :google_api_key, 'ABQIAAAAhku25_kwHrCaMNoGPqrDuxQKbOR1OQTnJP5UtH8YnJzbopuzORQWRcgtn0cQK7hwrKdAKAeRK6Cyjw'
 
 enable :sessions
 
