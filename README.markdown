@@ -1,7 +1,7 @@
-Christchurch Creative Space Site
-================================
+Spacecraft
+==========
 
-This is the official repository for the [Christchurch Creative Space site](http://nztech.org/chchspace).
+This is [Spacecraft](http://spacecraft.org.nz)'s site.
 
 You can submit ideas or report bugs under [issues on GitHub](http://github.com/chchspace/site/issues).
 
