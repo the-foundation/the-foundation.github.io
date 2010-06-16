@@ -1,4 +1,5 @@
 require 'sinatra'
+require 'logger'
 require 'active_record'
 require 'rdiscount'
 require 'digest/md5'
