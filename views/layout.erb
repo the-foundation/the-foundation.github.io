@@ -18,7 +18,6 @@
       <ul id="nav">
         <li><%= link_unless_current 'Home', '/' %></li>
         <li><%= link_unless_current 'About', '/about' %></li>
-        <li><%= link_unless_current 'Mailing List', 'http://groups.google.com/group/chchspace' %></li>
         <li><%= link_unless_current 'Photos', 'http://www.flickr.com/groups/chchspace/' %></li>
         <% @root_pages.each { |p| content_tag(:li, link_unless_current(h(p.title), "/#{h(p.permalink)}")) } %>
         <li><a href="irc://irc.freenode.net:6667/#chchspace">IRC</a></li>
@@ -27,6 +26,9 @@
         <li><a href="/authentication" class="delete">Log Out</a></li>
         <% end %>
       </ul>
+      <p>
+        Meeting times, members, email updates and more info can be found on our <a href="http://groups.google.com/group/chchspace">Google Group</a>.
+      </p>
     </div>
     
     <div id="article">
