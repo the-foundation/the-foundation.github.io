@@ -19,7 +19,7 @@
         <li><%= link_unless_current 'Home', '/' %></li>
         <li><%= link_unless_current 'About', '/about' %></li>
         <li><%= link_unless_current 'Photos', 'http://www.flickr.com/groups/chchspace/' %></li>
-        <% @root_pages.each { |p| content_tag(:li, link_unless_current(h(p.title), "/#{h(p.permalink)}")) } %>
+        <%= @root_pages.map { |p| content_tag(:li, link_unless_current(h(p.title), "/#{h(p.permalink)}")) }.join %>
         <li><a href="irc://irc.freenode.net:6667/#chchspace">IRC</a></li>
         <% if logged_in? %>
         <li><%= link_unless_current 'Pages', '/pages' %></li>
