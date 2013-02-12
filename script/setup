@@ -1,0 +1,35 @@
+#!/bin/sh
+
+# Exit from the script if any statement returns non-true
+set -e
+
+if test $(which ruby)
+then
+  echo "  + Ruby found."
+else
+  echo "==> You need to install Ruby"
+  echo "    RVM is good place to start: https://rvm.io/"
+  exit 1
+fi
+
+# Test for Bundler
+if test $(which bundle)
+then
+  echo "  + Bundler found."
+else
+  echo "==> You need to install Bundler. To install it, run:"
+  echo "      gem install bundler"
+  exit 1
+fi
+
+# Set up gems
+echo "  + Boostrapping gems:"
+echo "==============================="
+bundle install
+echo "==============================="
+echo ""
+
+echo "==> You're good to go!"
+echo ""
+echo "    Run 'bundle exec jekyll --serve --auto' to start a local development server."
+echo ""
