@@ -38,6 +38,7 @@ h2 {
 input, button {
   padding: 0.2em 0.5em;
   font-size: 1.2em;
+  outline: none;
 }
 
 input[type="email"] {
@@ -48,6 +49,17 @@ input[type="submit"], input[type="button"], button {
   border: 1px solid #8949b0;
   background: #8949b0;
   color: white;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover, input[type="button"]:hover, button:hover {
+  border-color: #a763d1;
+  background: #a763d1;
+}
+
+input[type="submit"]:active, input[type="button"]:active, button:active {
+  border-color: #5a2d77;
+  background: #5a2d77;
 }
 
 /* Wrap */
@@ -73,7 +85,6 @@ input[type="submit"], input[type="button"], button {
   border-top-left-radius: 0.2em;
   border-bottom-left-radius: 0.2em;
   width: 60%;
-  outline: none;
 }
 
 #mailing-list-subscription input[type="submit"] {
