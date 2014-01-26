@@ -64,7 +64,7 @@ input[type="submit"]:active, input[type="button"]:active, button:active {
 
 /* Wrap */
 
-#intro .content, #mailing-list-subscription, #reasons-to-come {
+#intro .content, section, footer {
   margin: 2em auto;
   width: 960px;
 }
@@ -72,7 +72,8 @@ input[type="submit"]:active, input[type="button"]:active, button:active {
 /* Mailing list */
 
 #mailing-list-subscription {
-  padding: 2em 0 4em;
+  margin: 2em auto;
+  overflow: hidden;
 }
 
 #mailing-list-subscription input {
@@ -122,4 +123,37 @@ input[type="submit"]:active, input[type="button"]:active, button:active {
   border-radius: 50%;
   height: 100%;
   width: 100%;
+}
+
+/* External links */
+
+.external-links {
+  margin: 2em 0;
+}
+
+.external-links a {
+  color: rgba(255, 255, 255, 0.2);
+  font-size: 2em;
+  margin: 0 0.5em;
+}
+
+.external-links a:hover {
+  color: white;
+}
+
+/* Footer */
+
+footer {
+  overflow: hidden;
+}
+
+footer .external-links {
+  float: right;
+  text-align: right;
+  width: 33%;
+}
+
+footer form {
+  float: left;
+  width: 66%;
 }
