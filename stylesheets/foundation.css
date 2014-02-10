@@ -159,3 +159,27 @@ footer form {
   float: left;
   width: 66%;
 }
+
+/* iPhone portrait */
+@media screen and (min-device-width: 320px) and (orientation: portrait) {
+  body {
+    padding: 0 1em;
+    width: 400px;
+  }
+
+  #intro .content, section, footer, #reasons-to-come .reason, footer form, footer .external-links {
+    width: 100%;
+  }
+
+  footer .external-links {
+    float: none;
+    text-align: center;
+  }
+
+  #mailing-list-subscription input[type="email"], #mailing-list-subscription input[type="submit"] {
+    border-radius: 0;
+    float: none;
+    padding: 0.5em;
+    width: 100%;
+  }
+}
