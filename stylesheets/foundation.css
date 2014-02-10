@@ -36,6 +36,7 @@ h2 {
 /* Forms */
 
 input, button {
+  border-radius: 0;
   padding: 0.2em 0.5em;
   font-size: 1.2em;
   outline: none;
@@ -50,6 +51,7 @@ input[type="submit"], input[type="button"], button {
   background: #8949b0;
   color: white;
   cursor: pointer;
+  -webkit-appearance: none;
 }
 
 input[type="submit"]:hover, input[type="button"]:hover, button:hover {
