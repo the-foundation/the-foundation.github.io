@@ -1,1 +1,1 @@
-exclude:     ['README.md', 'Gemfile*']
+exclude:     ['README.md', 'Gemfile*', 'vendor']
