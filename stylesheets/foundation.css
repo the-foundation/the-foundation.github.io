@@ -161,9 +161,11 @@ footer form {
 }
 
 /* iPhone portrait */
+
 @media screen and (min-device-width: 320px) and (orientation: portrait) {
   body {
     padding: 0 1em;
+    margin: 0 auto;
     width: 400px;
   }
 
