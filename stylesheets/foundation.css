@@ -116,7 +116,7 @@ input[type="submit"]:active, input[type="button"]:active, button:active {
 #reasons-to-come .reason {
   box-sizing: border-box;
   float: left;
-  width: 33%;
+  width: 28%;
   padding: 1em;
 }
 
