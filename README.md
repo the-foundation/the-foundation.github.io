@@ -16,9 +16,9 @@ The Foundation's website is built on [GitHub Pages](http://pages.github.com/), w
 
 #### Linux and Mac OS X
 
-Clone the repository, `cd` into the project directory and run:
+Clone the repository, and run the setup script:
 
-    script/setup
+    bin/setup
 
 This script will check your dependencies and walk you through the process to set up the site. It can safely be run multiple times.
 

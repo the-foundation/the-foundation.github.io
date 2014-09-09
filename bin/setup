@@ -32,5 +32,5 @@ echo ""
 
 echo "==> You're good to go!"
 echo ""
-echo "    Run 'script/server' to start a local development server."
+echo "    Run 'bin/server' to start a local development server."
 echo ""
