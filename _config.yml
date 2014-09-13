@@ -5,3 +5,10 @@ layout: article
 permalink: pretty
 sass:
     sass_dir: _scss
+
+defaults:
+  -
+    scope:
+      path: "" # match all files in the project
+    values:
+      layout: article
