@@ -1,9 +1,13 @@
+$natural-page-width: 960px;
+
 body, input, textarea {
   font: 14pt "proxima-nova", sans-serif;
 }
 
 body {
   line-height: 1.6em;
+  margin: 2em auto;
+  width: $natural-page-width;
 }
 
 b {
@@ -60,13 +64,6 @@ input[type="submit"]:hover, input[type="button"]:hover, button:hover {
 input[type="submit"]:active, input[type="button"]:active, button:active {
   border-color: #5a2d77;
   background: #5a2d77;
-}
-
-/* Wrap */
-
-#intro .content, section, footer {
-  margin: 2em auto;
-  width: 960px;
 }
 
 /* Mailing list */
