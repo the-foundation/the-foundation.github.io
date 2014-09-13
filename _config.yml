@@ -4,7 +4,7 @@ source: source
 layout: article
 permalink: pretty
 sass:
-    sass_dir: _scss
+  sass_dir: _scss
 
 defaults:
   -
