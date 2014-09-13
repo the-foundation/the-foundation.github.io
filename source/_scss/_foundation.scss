@@ -198,6 +198,11 @@ input[type="submit"]:active, input[type="button"]:active, button:active {
   overflow: hidden;
   padding: 1em 2em;
 
+  .content {
+    margin: 0 auto;
+    width: $natural-page-width;
+  }
+
   a {
     color: #ccc;
     font-weight: bold;
