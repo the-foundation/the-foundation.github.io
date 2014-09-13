@@ -11,4 +11,4 @@ defaults:
     scope:
       path: "" # match all files in the project
     values:
-      layout: article
+      layout: page
