@@ -163,35 +163,6 @@ input[type="submit"]:active, input[type="button"]:active, button:active {
     width: 66%;
   }
 }
-/* iPhone portrait */
-
-@media screen and (min-device-width: 320px) and (orientation: portrait) {
-  #page-body {
-    padding: 0 1em;
-    margin: 0 auto;
-    width: 400px;
-  }
-
-  #page-header {
-    display: none;
-  }
-
-  #intro .content, section, footer, #reasons-to-come .reason, footer form, footer .external-links {
-    width: 100%;
-  }
-
-  footer .external-links {
-    float: none;
-    text-align: center;
-  }
-
-  #mailing-list-subscription input[type="email"], #mailing-list-subscription input[type="submit"] {
-    border-radius: 0;
-    float: none;
-    padding: 0.5em;
-    width: 100%;
-  }
-}
 
 #page-header {
   border-bottom: 1px solid #ccc;
@@ -207,6 +178,7 @@ input[type="submit"]:active, input[type="button"]:active, button:active {
   }
 
   .content {
+    overflow: hidden;
     margin: 0 auto;
     width: $natural-page-width;
   }
