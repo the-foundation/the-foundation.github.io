@@ -71,25 +71,25 @@ input[type="submit"]:active, input[type="button"]:active, button:active {
 #mailing-list-subscription {
   margin: 2em auto;
   overflow: hidden;
-}
 
-#mailing-list-subscription input {
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  float: left;
-  margin: 0;
-}
+  input {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    float: left;
+    margin: 0;
+  }
 
-#mailing-list-subscription input[type="email"] {
-  border-top-left-radius: 0.2em;
-  border-bottom-left-radius: 0.2em;
-  width: 60%;
-}
+  input[type="email"] {
+    border-top-left-radius: 0.2em;
+    border-bottom-left-radius: 0.2em;
+    width: 60%;
+  }
 
-#mailing-list-subscription input[type="submit"] {
-  border-top-right-radius: 0.2em;
-  border-bottom-right-radius: 0.2em;
-  width: 40%;
+  input[type="submit"] {
+    border-top-right-radius: 0.2em;
+    border-bottom-right-radius: 0.2em;
+    width: 40%;
+  }
 }
 
 /* Intro */
@@ -97,10 +97,10 @@ input[type="submit"]:active, input[type="button"]:active, button:active {
 #intro {
   padding: 4em 0 0;
   text-align: center;
-}
 
-#intro h1 {
-  margin: 0 0 0.75em;
+  h1 {
+    margin: 0 0 0.75em;
+  }
 }
 
 /* Reasons to come */
