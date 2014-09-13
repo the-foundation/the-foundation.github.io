@@ -4,8 +4,6 @@ body, input, textarea {
 
 body {
   line-height: 1.6em;
-  background: #302c34;
-  color: rgba(255, 255, 255, 0.8);
 }
 
 b {
@@ -18,7 +16,7 @@ em {
 
 h1, h2, h3 {
   margin: 0.5em 0;
-  color: white;
+  color: #8949b0;
 }
 
 h1 {
@@ -112,56 +110,53 @@ input[type="submit"]:active, input[type="button"]:active, button:active {
 
 #reasons-to-come {
   overflow: hidden;
-}
+  text-align: center;
 
-#reasons-to-come .reason {
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  float: left;
-  width: 33%;
-  padding: 1em;
-}
+  .reason {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    float: left;
+    width: 33%;
+    padding: 1em;
+  }
 
-#reasons-to-come .illustration {
-  border: 4px solid;
-  border-radius: 50%;
-  height: 100%;
-  width: 100%;
+  .illustration {
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+  }
 }
-
-/* External links */
 
 .external-links {
   margin: 2em 0;
-}
 
-.external-links a {
-  color: rgba(255, 255, 255, 0.2);
-  font-size: 2em;
-  margin: 0 0.5em;
-}
+  a {
+    color: #8949b0;
+    font-size: 2em;
+    margin: 0 0.2em;
+  }
 
-.external-links a:hover {
-  color: white;
+  a:hover {
+    color: #a763d1;
+  }
 }
 
 /* Footer */
 
 footer {
   overflow: hidden;
-}
 
-footer .external-links {
-  float: right;
-  text-align: right;
-  width: 33%;
-}
+  .external-links {
+    float: right;
+    text-align: right;
+    width: 33%;
+  }
 
-footer form {
-  float: left;
-  width: 66%;
+  form {
+    float: left;
+    width: 66%;
+  }
 }
-
 /* iPhone portrait */
 
 @media screen and (min-device-width: 320px) and (orientation: portrait) {
@@ -173,10 +168,6 @@ footer form {
 
   #intro .content, section, footer, #reasons-to-come .reason, footer form, footer .external-links {
     width: 100%;
-  }
-
-  #reasons-to-come h2 {
-    text-align: center;
   }
 
   footer .external-links {
