@@ -6,8 +6,6 @@ body, input, textarea {
 
 body {
   line-height: 1.6em;
-  margin: 2em auto;
-  width: $natural-page-width;
 }
 
 a {
@@ -68,6 +66,13 @@ input[type="submit"]:hover, input[type="button"]:hover, button:hover {
 input[type="submit"]:active, input[type="button"]:active, button:active {
   border-color: #5a2d77;
   background: #5a2d77;
+}
+
+/* Layout */
+
+#page-body {
+  margin: 2em auto;
+  width: $natural-page-width;
 }
 
 /* Mailing list */
@@ -142,10 +147,10 @@ input[type="submit"]:active, input[type="button"]:active, button:active {
   }
 }
 
-/* Footer */
-
-footer {
+#page-footer {
+  margin: 0 auto;
   overflow: hidden;
+  width: $natural-page-width;
 
   .external-links {
     float: right;
@@ -161,7 +166,7 @@ footer {
 /* iPhone portrait */
 
 @media screen and (min-device-width: 320px) and (orientation: portrait) {
-  body {
+  #page-body {
     padding: 0 1em;
     margin: 0 auto;
     width: 400px;
@@ -191,7 +196,7 @@ footer {
 #page-header {
   border-bottom: 1px solid #ccc;
   overflow: hidden;
-  padding: 1em 0;
+  padding: 1em 2em;
 
   a {
     color: #ccc;
