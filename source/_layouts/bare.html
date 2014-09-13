@@ -37,8 +37,10 @@
       </div>
     </div>
 
-    <div id="page-body">
-      {{ content }}
+    <div id="page-body"{% if page.body_class %} class="{{ page.body_class }}"{% endif %}>
+      <div class="content">
+        {{ content }}
+      </div>
     </div>
 
     <div id="page-footer">
