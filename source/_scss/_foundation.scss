@@ -198,29 +198,40 @@ input[type="submit"]:active, input[type="button"]:active, button:active {
   overflow: hidden;
   padding: 1em 2em;
 
-  .content {
-    margin: 0 auto;
-    width: $natural-page-width;
-  }
-
   a {
     color: #ccc;
-    font-weight: bold;
-    text-transform: uppercase;
-    font-size: 1.2em;
-    float: left;
 
     &:hover {
       color: black;
     }
   }
 
+  .content {
+    margin: 0 auto;
+    width: $natural-page-width;
+  }
+
+  .logo {
+    font-size: 1.2em;
+    font-weight: bold;
+    text-transform: uppercase;
+    float: left;
+  }
+
   .nav {
     float: right;
 
     a {
-      font-size: 1.2em;
-      margin: 0 0 0 0.5em;
+      margin: 0 2em 0 0;
+    }
+
+    .social {
+      display: inline;
+      font-size: 1.4em;
+
+      a {
+        margin: 0 0 0 0.5em;
+      }
     }
   }
 }
