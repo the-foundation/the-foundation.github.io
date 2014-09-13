@@ -2,5 +2,6 @@ exclude:     ['README.md', 'Gemfile*', 'vendor', 'bin']
 markdown: kramdown
 source: source
 layout: article
+permalink: pretty
 sass:
     sass_dir: _scss
