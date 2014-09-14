@@ -1,0 +1,13 @@
+---
+title: Blog
+---
+
+<nav>
+  {% for page in site.posts %}
+    <a href="{{ page.url }}">
+      <h2>{{ page.title }}</h2>
+      {{ page.excerpt }}
+      {% include authorship.html %}
+    </a>
+  {% endfor %}
+</nav>
