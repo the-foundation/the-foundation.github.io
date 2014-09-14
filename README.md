@@ -2,8 +2,6 @@
 
 Public website for The Foundation, a [hackerspace](http://hackerspaces.org/wiki/Hackerspaces) based in Christchurch, New Zealand.
 
-The site lives in the `source` directory.
-
 ## Making changes
 
 There are several ways to make changes to the site:
