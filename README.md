@@ -33,3 +33,55 @@ Clone the repository, `cd` into the project directory and run:
 Run the site with:
 
     bundle exec jekyll serve --watch
+
+## Blog post
+
+Blog posts live in `_posts`.
+
+### Adding a blog post
+
+![Screencast](http://i.imgur.com/JDDhTkN.gif)
+
+To create a new blog post, add a file to the `_posts` directory with the format:
+
+    <year>-<month>-<day>-<permalink>.md
+
+For example, you might create file in `_posts` called:
+
+    2014-09-14-hello-world.md
+
+Inside the file you might have:
+
+```md
+---
+title: Hello world
+excerpt: A blog post
+author: pete
+---
+
+Hello, world!
+```
+
+### Authors
+
+A blog needs an author. Authors are defined in `_data/authors.yml`. You can add an entry like this:
+
+```
+pete:
+  name: Pete Nicholls
+  link: http://twitter.com/aupajo
+```
+
+### Formatting
+
+Formatting is handled with [Markdown](http://daringfireball.net/projects/markdown/syntax). You can include HTML verbatim.
+
+Code snippets can be done with syntax highlighting using Pygments.
+
+```
+{% highlight ruby %}
+def some_code
+  puts "OK"
+end
+{% endhighlight %}
+```
