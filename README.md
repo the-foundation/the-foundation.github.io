@@ -34,7 +34,7 @@ Run the site with:
 
     bundle exec jekyll serve --watch
 
-## Blog post
+## Blog posts
 
 Blog posts live in `_posts`.
 
