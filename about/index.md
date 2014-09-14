@@ -6,6 +6,12 @@ title: About
 
 A Makerspace, sometimes called Hackerspace, is both a physical place and a community. What binds the community together is the joy of making things. There is no limit on what “things” can mean in this context, many makerspaces have a bias towards electronics or physical computing projects but it can, and should, include working with wood, fabric, food, glass, metal, beer or projects that include all of those… anything that can be made, discussed, refined and tinkered with.
 
+## Where is it?
+
+At the stairs around the back of Pomeroy's Old Brewery Inn, 292 Kilmore St, Christhcurch.
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2892.832093210629!2d172.649733!3d-43.5266939999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d3189886d47167d%3A0x7f7bb49cba62f576!2sPomeroy&#39;s+Old+Brewery+Inn!5e0!3m2!1sen!2snz!4v1410671636913" width="100%" height="450" frameborder="0" style="border:0"></iframe>
+
 ## So is it just a shared workshop?
 
 There may be an aspect of that as Makerspaces are often opportunities for makers to access resources, such as 3D printers or laser cutters, that they might not be justifiable for an individual. But Makerspaces try and establish a community of makers, to share expertise, perhaps with regular events and often a social environment that goes beyond just a simple physical presence.
