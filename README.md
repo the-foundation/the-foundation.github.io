@@ -1,5 +1,7 @@
 # The Foundation
 
+[![Build Status](https://travis-ci.org/the-foundation/the-foundation.github.io.svg?branch=master)](https://travis-ci.org/the-foundation/the-foundation.github.io)
+
 Public website for The Foundation, a [hackerspace](http://hackerspaces.org/wiki/Hackerspaces) based in Christchurch, New Zealand.
 
 ## Making changes
