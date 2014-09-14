@@ -11,10 +11,15 @@ body {
 }
 
 a {
+  color: $blue;
   text-decoration: none;
+
+  &:hover {
+    color: #a763d1;
+  }
 }
 
-b {
+strong {
   font-weight: bold;
 }
 
@@ -28,15 +33,17 @@ h1, h2, h3 {
 }
 
 h1 {
-  font-family: "jaf-bernino-sans-comp", sans-serif;
-  text-transform: uppercase;
   font-weight: normal;
-  font-size: 4em;
+  font-size: 2em;
 }
 
 h2 {
   font-size: 1.4em;
   line-height: 1.4em;
+}
+
+p {
+  margin: 1em 0;
 }
 
 /* Forms */
@@ -68,6 +75,11 @@ input[type="submit"]:hover, input[type="button"]:hover, button:hover {
 input[type="submit"]:active, input[type="button"]:active, button:active {
   border-color: #5a2d77;
   background: #5a2d77;
+}
+
+.highlight {
+  font-family: Monaco, monospace;
+  margin: 1em 0;
 }
 
 /* Layout */
@@ -116,7 +128,14 @@ input[type="submit"]:active, input[type="button"]:active, button:active {
   text-align: center;
 
   h1 {
+    font-family: "jaf-bernino-sans-comp", sans-serif;
+    font-size: 4em;
+    text-transform: uppercase;
     margin: 0 0 0.75em;
+  }
+
+  p {
+    margin: 0;
   }
 }
 
@@ -145,13 +164,8 @@ input[type="submit"]:active, input[type="button"]:active, button:active {
   margin: 2em 0;
 
   a {
-    color: $blue;
     font-size: 2em;
     margin: 0 0.2em;
-  }
-
-  a:hover {
-    color: #a763d1;
   }
 }
 
@@ -173,6 +187,7 @@ input[type="submit"]:active, input[type="button"]:active, button:active {
 }
 
 #page-header {
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
   overflow: hidden;
   padding: 1em 2em;
 
@@ -213,4 +228,31 @@ input[type="submit"]:active, input[type="button"]:active, button:active {
       }
     }
   }
+}
+
+#post {
+  margin: 0 auto;
+  width: 40em;
+
+  h1 {
+    color: black;
+    font-weight: bold;
+  }
+
+  .footer {
+    border-top: 1px solid #ccc;
+    padding: 1em 0 0;
+  }
+}
+
+.post-preview {
+  padding: 2em 0;
+
+  h2 {
+    margin: 0;
+  }
+}
+
+.authorship {
+  color: #999;
 }

@@ -2,12 +2,12 @@
 title: Blog
 ---
 
-<nav>
-  {% for page in site.posts %}
-    <a href="{{ page.url }}">
-      <h2>{{ page.title }}</h2>
-      {{ page.excerpt }}
-      {% include authorship.html %}
-    </a>
-  {% endfor %}
-</nav>
+<h1>Blog</h1>
+
+{% for page in site.posts %}
+  <div class="post-preview">
+    <h2><a href="{{ page.url }}">{{ page.title }}</a></h2>
+    {{ page.excerpt }}
+    {% include authorship.html %}
+  </div>
+{% endfor %}

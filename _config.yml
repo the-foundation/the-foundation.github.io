@@ -10,3 +10,9 @@ defaults:
       path: "" # match all files in the project
     values:
       layout: page
+  -
+    scope:
+      path: ""
+      type: "posts" # all blog posts
+    values:
+      layout: post

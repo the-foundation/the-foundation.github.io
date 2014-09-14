@@ -1,6 +1,7 @@
 {% assign author = site.data.authors[page.author] %}
 
 <div class="authorship">
+  Posted
   on <time datetime="{{ page.date }}">{{ page.date | date: "%A, %-d %B %Y" }}</time>
-  by <span class="author">{{ author.name }}</span>
+  by <a href="{{ author.link }}" class="author">{{ author.name }}</a>
 </div>
