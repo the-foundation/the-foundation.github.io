@@ -4,6 +4,7 @@ $natural-page-width: 960px;
 
 body, input, textarea {
   font: 14pt "proxima-nova", sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 
 body {
