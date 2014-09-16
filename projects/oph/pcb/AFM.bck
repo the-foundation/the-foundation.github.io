@@ -1,0 +1,18 @@
+EESchema-DOCLIB  Version 2.0  Date: Sat 28 Jun 2014 10:49:21 NZST
+#
+$CMP AD8222
+D LM1876, Dual 20W Overture Seriers Audio Power Amplifier, with Mute Standby Mode, TO220-15 (MultiWatt)
+K LM1876 Overture Amplifier Dual 20W
+F http://www.national.com/ds/LM/LM1876.pdf
+$ENDCMP
+#
+$CMP BARREL_JACK
+D DC Barrel Jack
+$ENDCMP
+#
+$CMP SPST
+D Interrupteur simple
+K switch
+$ENDCMP
+#
+#End Doc Library

@@ -1,0 +1,74 @@
+EESchema Schematic File Version 2
+LIBS:AFM
+LIBS:MCU and comms-cache
+LIBS:OPH signal conditioning-cache
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:OPH Driver Mk 2-cache
+EELAYER 27 0
+EELAYER END
+$Descr A3 16535 11693
+encoding utf-8
+Sheet 1 4
+Title ""
+Date "27 jul 2014"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Sheet
+S 3950 4200 2500 2500
+U 5274D4F7
+F0 "MCU and comms" 60
+F1 "MCU and comms.sch" 60
+$EndSheet
+$Sheet
+S 6950 4200 2500 2500
+U 5274D7C5
+F0 "Power and references" 60
+F1 "Power and references.sch" 60
+$EndSheet
+$Sheet
+S 9950 4200 2500 2500
+U 5274DD70
+F0 "OPH signal conditioning" 60
+F1 "OPH signal conditioning.sch" 60
+$EndSheet
+Text Notes 12250 10975 0    80   ~ 0
+OPH DRIVER MK 2 - TOP LEVEL SHEET
+Text Notes 15825 10975 0    80   ~ 0
+AJS
+Text Notes 15500 11100 0    80   ~ 0
+B
+$EndSCHEMATC

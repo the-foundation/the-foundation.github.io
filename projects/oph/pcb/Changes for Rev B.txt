@@ -1,0 +1,12 @@
+1. Fix vias to pwr/gnd on U15 and U17
+2. Fix testpoint silkscreen labels
+3. Swap Track & Focus silkscreen labels
+4. Swap DIN/SYNC labels for Track & Focus
+5. Fix DC jack footprint (GND pad)
+6. Check value of noise bypass cap C25
+7. Propeller port labels for spare GPIOs
+8. Reroute trace under U13
+9. Investigate U14/16 ADC output range (0.4V to 3.8V) - need opamp follower?
+10. New quotation
+11. Fix U10 part number AD7691
+12. SMPSes are introducing noise - change to linears supplied by tracopower module
