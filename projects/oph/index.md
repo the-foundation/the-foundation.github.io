@@ -4,9 +4,8 @@ layout: bare
 ---
 
 # Optical Pickup Head driver board
-<!--
-<div class="project">
-  <h2><a href="/projects/i3">i3 3D printer</a></h2>
-  Our third and most successful 3D printer build to date.
+
+<div class="CAD_files">
+  <h2><a href="/projects/oph/pcb/OPH Driver Mk 2.kicad_pcb">PCB layout</a></h2>
+  in KiCAD format. Note: currently under active development!
 </div>
--->
