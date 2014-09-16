@@ -9,9 +9,9 @@ The XBox 360, and every other device that reads DVDs, contains an optical pickup
 
 The ability to measure these small distance variations with a cheap, compact optoelectronic module suggests a number of interesting scientific and environmental sensing applications, such as:
 
-- detection of seismic activity
-- detection of low frequency acoustic signals
-- measurement of cantilever deflection in an atomic force microscope
+*detection of seismic activity
+*detection of low frequency acoustic signals
+*measurement of cantilever deflection in an atomic force microscope
 
 The OPH is effectively a tiny optics laboratory containing a laser diode, a quadrant photodetector, a beam splitter, focussing lenses and linear motors to direct the laser beam.
 
