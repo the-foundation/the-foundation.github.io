@@ -8,11 +8,11 @@ layout: bare
 The XBox 360, and every other device that reads DVDs, contains an optical pickup head (OPH). The OPH is a small plastic module housing all the optics required to detect tiny variations in distance between the module laser and the reflective surface of the DVD spinning beneath it. These distance variations correspond to the microscopic 'pits' in the surface of the DVD that represent the digital information stored on it.  
 
 The ability to measure these small distance variations with a cheap, compact optoelectronic module suggests a number of interesting scientific and environmental sensing applications, such as:
-
-*detection of seismic activity
-*detection of low frequency acoustic signals
-*measurement of cantilever deflection in an atomic force microscope
-
+<ul>
+<li>detection of seismic activity</li>
+<li>detection of low frequency acoustic signals</li>
+<li>measurement of cantilever deflection in an atomic force microscope</li>
+</ul>
 The OPH is effectively a tiny optics laboratory containing a laser diode, a quadrant photodetector, a beam splitter, focussing lenses and linear motors to direct the laser beam.
 
 <!-- picture of OPH -->
