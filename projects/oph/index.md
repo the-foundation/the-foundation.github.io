@@ -21,7 +21,7 @@ The OPH is effectively a tiny optics laboratory containing a laser diode, a quad
 
 The driver board will provide the I/O resources to power the laser diode, measure the Focus Error Signal (FES), and control the X and Z translation of the focussing lens. This will be done via a Propeller multicore microcontroller. Communications with the microcontroller (data transfer, firmware updates etc) will be via USB.
 
-*Once the hardware design has been brought up to a useful state, the CAD files will be released under an appropriate open source licence. The same goes for the source for the firmware.*
+**Once the hardware design has been brought up to a useful state, the CAD files will be released under an appropriate open source licence. The same goes for the source for the firmware.**
 
 An early version of the driver board:  
 
