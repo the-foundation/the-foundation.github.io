@@ -27,6 +27,6 @@ An early version of the driver board:
 
 ![Alt text](/images/Projects/oph/v1 pcb.JPG "An early version of the driver board")
 
-Screencap of v2 PCB layout in progress:  
+Screencap of v2 PCB layout in progress (17/09/2014):  
 
 ![Alt text](/images/Projects/oph/v2 screencap.jpg "Screencap of v2 PCB layout in progress")
