@@ -27,13 +27,6 @@ An early version of the driver board:
 
 ![Alt text](/images/Projects/oph/v1 pcb.JPG "An early version of the driver board")
 
-<!-- screen capture of layout of v2 OPH driver -->
+Screencap of v2 PCB layout in progress:  
 
-<!-- link to archive of CAD files for download -->
-
-<!--
-<div class="CAD_files">
-
-  <h2><a href="/projects/oph/pcb/OPH Driver Mk 2.kicad_pcb">PCB layout</a></h2> in KiCAD format. Note: currently under active development!
-</div>
--->
+![Alt text](/images/Projects/oph/v2 screencap.jpg "Screencap of v2 PCB layout in progress")
