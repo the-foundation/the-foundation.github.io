@@ -15,7 +15,7 @@ The ability to measure these small distance variations with a cheap, compact opt
 </ul>
 The OPH is effectively a tiny optics laboratory containing a laser diode, a quadrant photodetector, a beam splitter, focussing lenses and linear motors to direct the laser beam.
 
-<!-- picture of OPH -->
+![Alt text](/images/Projects/oph/oph.jpg "An XBox 360 Optical Pickup Head")
 
 The driver board will provide the I/O resources to power the laser diode, measure the Focus Error Signal (FES), and control the X and Z translation of the focussing lens. This will be done via a Propeller multicore microcontroller. Communications with the microcontroller (data transfer, firmware updates etc) will be via USB.
 
