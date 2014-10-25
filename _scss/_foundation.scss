@@ -78,9 +78,19 @@ input[type="submit"]:active, input[type="button"]:active, button:active {
   background: #5a2d77;
 }
 
+pre, code {
+  background: #f9f9f9;
+  font: 11pt/1.6em Monaco, monospace;
+}
+
+code {
+  padding: 0.2em;
+}
+
 .highlight {
-  font-family: Monaco, monospace;
-  margin: 1em 0;
+  margin: 2em 0;
+  padding: 1em;
+  overflow: auto;
 }
 
 /* Layout */
