@@ -11,20 +11,20 @@ previous up).
 
 Anyway, I started working on an old/new project of weather station.
 
-I had a few Beaglebones with me, but I couldn't get any of them working (ie. no Internet no fun).
+I had a few `Beaglebones` with me, but I couldn't get any of them working (ie. no Internet no fun).
 
-I ended up using my daughter's RaspberryPi which has some of the necessary kernel modules baked in.
+I ended up using my daughter's `RaspberryPi` which has some of the necessary kernel modules baked in.
 
-That allowed me to try out DS18B20 module which is one-wire temperature sensor. The module already has a pull
-resitor on it so it was literally about pluging the tree legs of the module to correct pins on RPi.
+That allowed me to try out `DS18B20` module which is one-wire temperature sensor. The module already has a pull
+resitor on it so it was literally about pluging the tree legs of the module to correct pins on `RPi`.
 
-Here are some links that contain further reading about DS18B20 and RPi:
+Here are some links that contain further reading about `DS18B20` and `RPi`:
 
 * [http://www.reuk.co.uk/DS18B20-Temperature-Sensor-with-Raspberry-Pi.htm](http://www.reuk.co.uk/DS18B20-Temperature-Sensor-with-Raspberry-Pi.htm)
 
 * [http://blog.turningdigital.com/2012/09/raspberry-pi-ds18b20-temperature-sensor-rrdtool/](http://blog.turningdigital.com/2012/09/raspberry-pi-ds18b20-temperature-sensor-rrdtool/)
 
-Once I had the module connected to 3V3, GND and GPIO4 I ran the following on a command line:
+Once I had the module connected to `3V3`, `GND` and `GPIO4` I ran the following on a command line:
 
 {% highlight bash %}
 sudo su -
@@ -32,13 +32,13 @@ modprobe w1-gpio && modprobe w1_therm
 {% endhighlight %}
 
 I had two modules handy so since this is one-wire type of sensor I plugged their signal to
-the same GPIO4 to get reading from both of them.
+the same `GPIO4` to get reading from both of them.
 
-Bpth DS18B20s showed up at `/sys/bus/w1/devices/` as IDs `0000049581c8`, `00000494f4fd` so I could
+Both `DS18B20s` showed up at `/sys/bus/w1/devices/` as IDs `0000049581c8`, `00000494f4fd` so I could
 see the sensor data at `/sys/bus/w1/devices/28-0000049581c8/w1_slave` and
 `/sys/bus/w1/devices/28-00000494f4fd/w1_slave` files.
 
-I wrote a simple Python script which has hard-coded IDs, reads and processes the sensor data
+I wrote a simple `Python` script which has hard-coded IDs, reads and processes the sensor data
 and prints the sensor value out.
 
 {% highlight python %}
