@@ -16,3 +16,8 @@ layout: bare
   <h2><a href="/projects/oph">Optical Pickup Head driver board</a></h2>
   A pcb to control the optics in an XBox 360 optical pickup head for various scientific applications.
 </div>
+
+<div class="project">
+  <h2><a href="/projects/ss">Sensor Station</a></h2>
+  Single-board computer + sensors + Linux + Python + The Internet.
+</div>
